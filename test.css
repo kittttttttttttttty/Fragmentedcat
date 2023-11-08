@@ -1,0 +1,32 @@
+body {
+    background-color: gray;
+    width: 1000px;
+    height: 1000px;
+    counter-reset: counterd;
+}
+
+.isbutton {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    border-radius: 8%;
+    position: relative; left: 250px; top: 250px;
+}
+
+.istext {
+    font-size: 50px;
+    position: relative; left: 25px; top: 20px;
+    user-select: none;
+}
+
+.reseted {
+    width: 100px;
+    height: 30px;
+    position: relative; left: 250px; top: 270px;
+    background-color: darkgrey;
+    border-radius: 18%;
+    font-size: 23px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    user-select: none;
+}
