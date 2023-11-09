@@ -1,9 +1,11 @@
+html {
+    height: 100%;
+  }
+
 body {
     background-color: gray;
-    width: 1000px;
-    height: 1000px;
+    min-height: 100%;
     counter-reset: counterd;
-    max-width: 93.9%;
 }
 
 .isbutton {
