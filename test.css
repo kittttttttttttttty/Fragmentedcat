@@ -30,10 +30,10 @@ body {
     display: flex;
     justify-content: center;
     user-select: none;
-    font-size: 250px;
+    font-size: 180px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    transform: translate(-50%, -225%);
+    transform: translate(-51%, -295%);
     pointer-events: none;
 }
 
