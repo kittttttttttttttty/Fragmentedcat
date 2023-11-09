@@ -10,7 +10,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 8.5%;
-    position: relative; left: 250px; top: 250px;
+    margin: auto;
 }
 
 .istext {
