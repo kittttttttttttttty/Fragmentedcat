@@ -9,3 +9,9 @@ function resetss() {
     butto = document.getElementById('clk')
     butto.innerHTML = '';
 }
+function biggui() {
+    console.log("bigged")
+}
+function smallgui() {
+    console.log("smalled")
+}
