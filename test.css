@@ -4,7 +4,7 @@ html {
   }
 
 body {
-    background-color: gray;
+    background-image: url('/images/mohaimain.gif');
     height: 100%;
     counter-reset: counterd;
     overflow: hidden;
