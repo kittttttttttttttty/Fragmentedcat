@@ -23,7 +23,6 @@ body {
     padding: 5px;
     width: 100px;
     height: 100px;
-    z-index: 3;
 }
 
 .istext {
@@ -34,7 +33,6 @@ body {
     font-size: 50px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    z-index: 1;
 }
 
 .reseted {
@@ -56,6 +54,6 @@ body {
     height: 90px;
     position: absolute;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    pointer-events:none 
+    pointer-events:none;
+    z-index: 1;
 }
