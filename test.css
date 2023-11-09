@@ -4,7 +4,7 @@ html {
   }
 
 body {
-    background-image: url('/images/mohaimain.gif');
+    background-image: url('/images/favicon.ico');
     height: 100%;
     counter-reset: counterd;
     overflow: hidden;
