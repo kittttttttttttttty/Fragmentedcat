@@ -18,9 +18,9 @@ body {
 
 .isbutton {
     transform: translate(-50%, -50%);
-    background-color: aqua;
+    background-color: black;
     border-radius: 8%;
-    padding: 10px;
+    padding: 5px;
     width: 100px;
     height: 100px;
 }
@@ -32,6 +32,8 @@ body {
     user-select: none;
     font-size: 50px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    z-index: 1;
 }
 
 .reseted {
@@ -46,4 +48,14 @@ body {
     top: 0;
     width: 100px;
     height: 30px;
+}
+
+.isimg {
+    src: "/images/mohai.gif";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events:none 
 }
