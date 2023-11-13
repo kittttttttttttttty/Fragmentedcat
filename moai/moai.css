@@ -4,7 +4,7 @@ html {
   }
 
 body {
-    background-image: url('/moai/moaimages/favicon.ico');
+    background-image: url('/moai/moaimg/favicon.ico');
     height: 100%;
     counter-reset: counterd;
     overflow: hidden;
