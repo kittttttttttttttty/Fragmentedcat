@@ -81,7 +81,7 @@ body {
 
 .backbutton {
     background-color: darkgray;
-    transform: translate(-10%, 10%);
+    transform: translate(0%, 10%);
     width: 140px;
     height: 60px;
     border-radius: 9px;
