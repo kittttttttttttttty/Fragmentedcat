@@ -53,7 +53,7 @@ body {
 
 .bigbutton {
     background-color: darkgray;
-    transform: translate(-110%, -1000%);
+    transform: translate(-110%, -960%);
     width: 250px;
     height: 100px;
     border-radius: 18px;
@@ -67,7 +67,7 @@ body {
 
 .smallbutton {
     background-color: darkgray;
-    transform: translate(10%, -1000%);
+    transform: translate(10%, -960%);
     width: 250px;
     height: 100px;
     border-radius: 18px;
