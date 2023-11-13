@@ -1,3 +1,7 @@
+.body {
+    background-image: url(/images/background.jpg);
+}
+
 .anouncement {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 27px;
