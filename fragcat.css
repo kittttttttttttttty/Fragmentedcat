@@ -1,3 +1,10 @@
 .anouncement {
     font-size: 27px;
 }
+
+.topbar {
+    width: 108%;
+    background-color: black;
+    height: 50px;
+    transform: translate(-4%, 0%);
+}
