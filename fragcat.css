@@ -1,6 +1,5 @@
 .anouncement {
     font-size: 27px;
-    padding-top:50px;
 }
 
 .topbar {
@@ -10,4 +9,36 @@
     top: 0px;
     position: fixed;
     margin-left: -10;
+}
+
+.moai {
+    font-size: 35px;
+    user-select: none;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1.5px;
+    width: 20%;
+    height: 47px;
+    transform: translate(0.1%, 0%);
+    min-width: 100px;
+}
+
+.new {
+    font-size: 35px;
+    user-select: none;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1.5px;
+    width: 20%;
+    height: 47px;
+    transform: translate(105%, -100%);
+    min-width: 100px
 }
