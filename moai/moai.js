@@ -15,3 +15,6 @@ function biggui() {
 function smallgui() {
     console.log("smalled")
 }
+function backbutton() {
+    location.replace("/")
+}

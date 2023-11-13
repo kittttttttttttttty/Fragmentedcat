@@ -1,4 +1,5 @@
 .anouncement {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 27px;
 }
 
@@ -13,6 +14,7 @@
 }
 
 .moai {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
     user-select: none;
     color: white;
@@ -27,19 +29,17 @@
 }
 
 .new {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
     user-select: none;
-    display: flex;
     color: white;
     text-align: center;
-    justify-content: center;
     border-color: gray;
     border-style: solid;
     border-width: 1.5px;
     width: 20%;
     height: 47px;
-    position: fixed;
-    min-width: 100px;
     top: 0px;
+    position: fixed;
     transform: translate(106%, 0%);
 }
