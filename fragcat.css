@@ -1,10 +1,13 @@
 .anouncement {
     font-size: 27px;
+    padding-top:50px;
 }
 
 .topbar {
-    width: 108%;
+    width: 9000px;
     background-color: black;
     height: 50px;
-    transform: translate(-4%, 0%);
+    top: 0px;
+    position: fixed;
+    margin-left: -10;
 }
