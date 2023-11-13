@@ -1,3 +1,3 @@
 function moaired() {
-    location.replace("fragmentedcat.com/moai/")
+    location.replace("moai/")
 }
