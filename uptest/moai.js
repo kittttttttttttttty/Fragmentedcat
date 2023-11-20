@@ -1,3 +1,0 @@
-function backbutton() {
-    location.replace("/")
-}

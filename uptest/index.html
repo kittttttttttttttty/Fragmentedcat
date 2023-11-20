@@ -2,13 +2,58 @@
     <head>
         <title>upload</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <script src="moai.js"></script>
-        <link rel="stylesheet" href="moai.css">
+        <script>
+            function backbutton() {
+    location.replace("/")
+}
+        </script>
+        <style>
+            html {
+    height: 100%;
+    overflow: hidden;
+  }
+
+body {
+    height: 100%;
+    counter-reset: counterd;
+    overflow: hidden;
+}
+
+.backbutton {
+    background-color: darkgray;
+    transform: translate(0%, 10%);
+    width: 140px;
+    height: 60px;
+    border-radius: 9px;
+    text-align: center;
+    user-select: none;
+    position: absolute;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+}
+
+.imagged {
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+}
+
+.mains {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.fileupload {
+    transform: translate(-35%, -2300%);
+}
+        </style>
     </head>
     <body>
         <div class="backbutton" onclick="backbutton()">Back</div>
         <div class="mains">
             <img src="/images/favicon.ico" id="imaged" class="imagged"></img>
+            <input type="file" class="fileupload">
         </div>
     </body>
 </html
