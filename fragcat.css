@@ -1,6 +1,6 @@
 .body {
     background-image: url(/images/background.jpg);
-    background-size: fill;
+    background-size: cover;
     overflow: hidden;
 }
 
