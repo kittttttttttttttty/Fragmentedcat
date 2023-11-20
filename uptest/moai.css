@@ -8,3 +8,28 @@ body {
     counter-reset: counterd;
     overflow: hidden;
 }
+
+.backbutton {
+    background-color: darkgray;
+    transform: translate(0%, 10%);
+    width: 140px;
+    height: 60px;
+    border-radius: 9px;
+    text-align: center;
+    user-select: none;
+    position: absolute;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+}
+
+.imagged {
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+}
+
+.mains {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
