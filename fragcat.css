@@ -49,3 +49,20 @@
     position: fixed;
     transform: translate(106%, 0%);
 }
+
+.oldprojects {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    user-select: none;
+    color: black;
+    text-align: center;
+    border-color: hsla(234, 26%, 33%, 1);
+    border-style: solid;
+    border-width: 1.5px;
+    width: 250px;
+    height: 47px;
+    top: 0px;
+    position: static;
+    float: right;
+    transform: translate(8%, -274%);
+}

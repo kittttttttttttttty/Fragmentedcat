@@ -4,3 +4,6 @@ function moaired() {
 function uptestred() {
     location.replace("uptest/")
 }
+function oldprojectsred() {
+    location.replace("/oldprojects")
+}
