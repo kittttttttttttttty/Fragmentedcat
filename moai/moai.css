@@ -52,7 +52,7 @@ body {
     height: 120px;
 }
 
-.bigbutton {
+.updateleaderboard {
     background-color: darkgray;
     transform: translate(-110%, -960%);
     width: 250px;
@@ -62,7 +62,7 @@ body {
     user-select: none;
     position: absolute;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 70px;
+    font-size: 39px;
     top: 565px;
 }
 

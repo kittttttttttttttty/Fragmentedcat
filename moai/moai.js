@@ -1,3 +1,11 @@
+const { data } = require("jquery");
+
+let result = await fetch(request);
+
+
+
+
+
 function clicks() {
     console.log("clicked")
     const counter = document.querySelector('#clk'),
@@ -14,8 +22,28 @@ function resetss() {
     butto = document.getElementById('clk')
     butto.innerHTML = 'Click';
 }
-function biggui() {
-    console.log("bigged")
+function updatelead() {
+    fetch("https://fragcat-d376.restdb.io/rest/users")
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            let leaderboardd = data;
+
+            leaderboardd.map(function(leaderboardd) {
+                let li = document.createElement('li');
+                let name = document.createElement('h2');
+                let score = document.createElement('span');
+
+                name.innerHTML = `${leaderboardd.name}`
+                score.innerHTML = `${leaderboardd.score}`
+
+                li.appendChild(name);
+                li.appendChild(score);
+                list.appendChild(li);
+            });
+        })
+    ul.appendChild(list);
 }
 function smallgui() {
     console.log("smalled")
