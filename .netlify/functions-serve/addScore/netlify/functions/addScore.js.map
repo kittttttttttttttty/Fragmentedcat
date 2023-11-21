@@ -1,8 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../Users/student/Desktop/Failed Sideprojects/fragmentedcat/netlify/functions/addScore.ts"],
-  "sourceRoot": "/tmp/tmp-51027-qkUm98UUAEy7",
-  "sourcesContent": ["import { Handler } from '@netlify/functions'\nimport { PrismaClient } from '@prisma/client'\n\nconst prisma = new PrismaClient();\n\ninterface ScoreEntry {\n  playerId: string,\n  score: string\n}\n\nconst handler: Handler = async (event, context) => {\n  if(event.body) {\n    const newScore = JSON.parse(event.body) as ScoreEntry;\n    await prisma.player_scores.create({\n      data: {\n        player_id: BigInt(newScore.playerId),\n        score: parseInt(newScore.score)\n      },\n    });\n\n    return {\n      statusCode: 200,\n      body: JSON.stringify(newScore)\n    };\n  }\n\n  return {\n    statusCode: 500\n  };\n}\n\n\nexport { handler }\n\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,oBAA6B;AAE7B,IAAM,SAAS,IAAI,2BAAa;AAOhC,IAAM,UAAmB,OAAO,OAAO,YAAY;AACjD,MAAG,MAAM,MAAM;AACb,UAAM,WAAW,KAAK,MAAM,MAAM,IAAI;AACtC,UAAM,OAAO,cAAc,OAAO;AAAA,MAChC,MAAM;AAAA,QACJ,WAAW,OAAO,SAAS,QAAQ;AAAA,QACnC,OAAO,SAAS,SAAS,KAAK;AAAA,MAChC;AAAA,IACF,CAAC;AAED,WAAO;AAAA,MACL,YAAY;AAAA,MACZ,MAAM,KAAK,UAAU,QAAQ;AAAA,IAC/B;AAAA,EACF;AAEA,SAAO;AAAA,IACL,YAAY;AAAA,EACd;AACF;",
-  "names": []
-}
