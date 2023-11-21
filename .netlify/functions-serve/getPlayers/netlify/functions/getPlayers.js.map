@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../Users/student/Desktop/Failed Sideprojects/fragmentedcat/netlify/functions/getPlayers.ts"],
+  "sourceRoot": "/tmp/tmp-51027-WpDQCZ8PZWvw",
+  "sourcesContent": ["import { Handler } from '@netlify/functions'\nimport { PrismaClient } from '@prisma/client'\n\nconst prisma = new PrismaClient();\n\nconst handler: Handler = async (_event, _context) => {\n  // load all players from the database\n  const allPlayers = await prisma.players.findMany();\n  return {\n    statusCode: 200,\n    body: JSON.stringify(allPlayers, (_key, value) =>\n      // need to add a custom serializer because CockroachDB IDs map to\n      // JavaScript BigInts, which JSON.stringify has trouble serializing.\n      typeof value === 'bigint'\n        ? value.toString()\n        : value \n    )\n  }\n}\n\nexport { handler }\n\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,oBAA6B;AAE7B,IAAM,SAAS,IAAI,2BAAa;AAEhC,IAAM,UAAmB,OAAO,QAAQ,aAAa;AAEnD,QAAM,aAAa,MAAM,OAAO,QAAQ,SAAS;AACjD,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK;AAAA,MAAU;AAAA,MAAY,CAAC,MAAM;AAAA;AAAA;AAAA,QAGtC,OAAO,UAAU,WACb,MAAM,SAAS,IACf;AAAA;AAAA,IACN;AAAA,EACF;AACF;",
+  "names": []
+}
