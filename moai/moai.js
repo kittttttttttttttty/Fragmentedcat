@@ -1,6 +1,5 @@
-const { data } = require("jquery");
-
-let result = await fetch(request);
+const ul = document.getElementById('leaderboards');
+const list = document.createDocumentFragment();
 
 
 
