@@ -26,7 +26,7 @@ function updatelead() {
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "authorization": "Bearer 655e177188709e88598b41ad", // Replace with your actual JWT or Access Token
+            "x-apikey": "655e177188709e88598b41ad", // Replace with your actual CORS API key
             "cache-control": "no-cache"
         }
     }
