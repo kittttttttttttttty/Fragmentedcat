@@ -34,7 +34,7 @@
     position: fixed;
 }
 
-.oldprojects {
+.backbutton {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
     user-select: none;
@@ -43,10 +43,10 @@
     border-color: hsla(234, 26%, 33%, 1);
     border-style: solid;
     border-width: 1.5px;
-    width: 250px;
+    width: 130px;
     height: 47px;
     top: 0px;
     position: static;
     float: right;
-    transform: translate(8%, -274%);
+    transform: translate(15%, -100%);
 }
