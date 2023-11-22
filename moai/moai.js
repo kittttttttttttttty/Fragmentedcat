@@ -30,9 +30,9 @@ function updatelead() {
         }
       });
       
-      xhr.open("GET", "https://fragcat-d376.restdb.io/rest/users");
+      xhr.open("GET", "https://fragcat-5d83a-default-rtdb.firebaseio.com/scores/scores.json");
       xhr.setRequestHeader("content-type", "application/json");
-      xhr.setRequestHeader("x-apikey", "655e177188709e88598b41ad");
+      xhr.setRequestHeader("x-apikey", "AIzaSyCD8jGlrZz4h3Zetjkv6jZrZt4BUYgggQw");
       xhr.setRequestHeader("cache-control", "no-cache");
       
       xhr.send(data);
