@@ -19,29 +19,34 @@ function resetss() {
 }
 
 function updatelead() {
-    fetch("https://fragcat-d376.restdb.io/rest/users", {
-        headers: {
-            "Accept": "application/json",
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://your-server-url/getLeaderboard", // Replace with your actual server endpoint
+        "method": "GET",
+        "headers": {
+            "content-type": "application/json",
+            "authorization": "Bearer YOUR_JWT_OR_ACCESS_TOKEN", // Replace with your actual JWT or Access Token
+            "cache-control": "no-cache"
         }
-    })
-        .then(response => response.json())
-        .then(data => {
-            ul.innerHTML = ''; // Clear the existing leaderboard before updating
-            data.forEach(user => {
-                const li = document.createElement('li');
-                const name = document.createElement('h2');
-                const score = document.createElement('span');
+    }
 
-                name.innerHTML = `${user.user}`;
-                score.innerHTML = `${user.num}`;
+    $.ajax(settings).done(function (response) {
+        ul.innerHTML = ''; // Clear the existing leaderboard before updating
+        response.forEach(function (user) {
+            const li = document.createElement('li');
+            const name = document.createElement('h2');
+            const score = document.createElement('span');
 
-                li.appendChild(name);
-                li.appendChild(score);
-                list.appendChild(li);
-            });
-            ul.appendChild(list);
-        })
-        .catch(error => console.error('Error fetching leaderboard:', error));
+            name.innerHTML = `${user.user}`;
+            score.innerHTML = `${user.num}`;
+
+            li.appendChild(name);
+            li.appendChild(score);
+            list.appendChild(li);
+        });
+        ul.appendChild(list);
+    });
 }
 
 function smallgui() {
