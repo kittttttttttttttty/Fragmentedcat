@@ -19,21 +19,23 @@ function resetss() {
 }
 
 function updatelead() {
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://fragcat-d376.restdb.io/rest/users",
-        "method": "GET",
-        "headers": {
-          "content-type": "application/json",
-          "x-apikey": "655e177188709e88598b41ad",
-          "cache-control": "no-cache"
-        }
-      }
+      var data = null;
+
+      var xhr = new XMLHttpRequest();
+      xhr.withCredentials = false;
       
-      $.ajax(settings).done(function (response) {
-        console.log(response);
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === 4) {
+          console.log(this.responseText);
+        }
       });
+      
+      xhr.open("GET", "https://fragcat-d376.restdb.io/rest/users");
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.setRequestHeader("x-apikey", "655e177188709e88598b41ad");
+      xhr.setRequestHeader("cache-control", "no-cache");
+      
+      xhr.send(data);
 }
 
 function smallgui() {
