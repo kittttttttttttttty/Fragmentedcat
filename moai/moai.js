@@ -22,11 +22,11 @@ function updatelead() {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://your-server-url/getLeaderboard", // Replace with your actual server endpoint
+        "url": "https://fragcat-d376.restdb.io/rest/users", // Replace with your actual server endpoint
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "authorization": "Bearer YOUR_JWT_OR_ACCESS_TOKEN", // Replace with your actual JWT or Access Token
+            "authorization": "Bearer 655e177188709e88598b41ad", // Replace with your actual JWT or Access Token
             "cache-control": "no-cache"
         }
     }
