@@ -22,31 +22,18 @@ function updatelead() {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://fragcat-d376.restdb.io/rest/users", // Replace with your actual server endpoint
+        "url": "https://fragcat-d376.restdb.io/rest/users",
         "method": "GET",
         "headers": {
-            "content-type": "application/json",
-            "x-apikey": "655e177188709e88598b41ad", // Replace with your actual CORS API key
-            "cache-control": "no-cache"
+          "content-type": "application/json",
+          "x-apikey": "655e177188709e88598b41ad",
+          "cache-control": "no-cache"
         }
-    }
-
-    $.ajax(settings).done(function (response) {
-        ul.innerHTML = ''; // Clear the existing leaderboard before updating
-        response.forEach(function (user) {
-            const li = document.createElement('li');
-            const name = document.createElement('h2');
-            const score = document.createElement('span');
-
-            name.innerHTML = `${user.user}`;
-            score.innerHTML = `${user.num}`;
-
-            li.appendChild(name);
-            li.appendChild(score);
-            list.appendChild(li);
-        });
-        ul.appendChild(list);
-    });
+      }
+      
+      $.ajax(settings).done(function (response) {
+        console.log(response);
+      });
 }
 
 function smallgui() {
