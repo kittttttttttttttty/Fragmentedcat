@@ -30,9 +30,8 @@ function updatelead() {
         }
       });
       
-      xhr.open("GET", "https://fragcat-5d83a-default-rtdb.firebaseio.com/scores/scores.json");
+      xhr.open("GET", "https://fragcat-5d83a-default-rtdb.firebaseio.com/scores/scores.json?auth=AIzaSyCD8jGlrZz4h3Zetjkv6jZrZt4BUYgggQw");
       xhr.setRequestHeader("content-type", "application/json");
-      xhr.setRequestHeader("x-apikey", "AIzaSyCD8jGlrZz4h3Zetjkv6jZrZt4BUYgggQw");
       xhr.setRequestHeader("cache-control", "no-cache");
       
       xhr.send(data);
