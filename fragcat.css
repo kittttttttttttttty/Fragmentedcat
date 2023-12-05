@@ -32,6 +32,7 @@
     height: 47px;
     top: 0px;
     position: fixed;
+    cursor: pointer;
 }
 
 .uptest {
@@ -48,6 +49,7 @@
     top: 0px;
     position: fixed;
     transform: translate(106%, 0%);
+    cursor: pointer;
 }
 
 .oldprojects {
@@ -65,4 +67,5 @@
     position: static;
     float: right;
     transform: translate(8%, -274%);
+    cursor: pointer;
 }
