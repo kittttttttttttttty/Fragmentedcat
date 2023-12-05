@@ -50,6 +50,7 @@ body {
     top: 0;
     width: 400px;
     height: 120px;
+    cursor: pointer;
 }
 
 .updateleaderboard {
@@ -64,6 +65,7 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 39px;
     top: 565px;
+    cursor: pointer;
 }
 
 .smallbutton {
@@ -78,6 +80,7 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 70px;
     top: 565px;
+    cursor: pointer;
 }
 
 .backbutton {
@@ -91,4 +94,5 @@ body {
     position: absolute;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 45px;
+    cursor: pointer;
 }
