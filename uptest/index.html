@@ -30,6 +30,7 @@ body {
     position: absolute;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 45px;
+    cursor: pointer;
 }
 
 .imagged {
@@ -47,10 +48,29 @@ body {
 .fileupload {
     transform: translate(-35%, -2300%);
 }
+
+.textd {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    font-size: 27px;
+    background-color: yellow;
+    border-radius: 9px;
+    padding: 5px;
+    user-select: none;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    z-index: 1;
+}
         </style>
     </head>
     <body>
         <div class="backbutton" onclick="backbutton()">Back</div>
+        <div class="textd">This is currently broken,
+            <div class="twoline">it will not do anything</div>
+        </div>
         <div class="mains">
             <img src="/images/favicon.ico" id="imaged" class="imagged">
                 <input type="file" class="fileupload">
