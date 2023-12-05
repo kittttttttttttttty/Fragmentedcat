@@ -32,6 +32,7 @@
     height: 47px;
     top: 0px;
     position: fixed;
+    cursor: pointer;
 }
 
 .buton {
@@ -48,6 +49,7 @@
     top: 0px;
     transform: translate(104%, 0%);
     position: fixed;
+    cursor: pointer;
 }
 
 .backbutton {
@@ -65,4 +67,5 @@
     position: static;
     float: right;
     transform: translate(15%, -100%);
+    cursor: pointer;
 }
